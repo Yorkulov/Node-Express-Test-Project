@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title Foydalanuvchini Tahrirlash
+    link(rel='stylesheet', href='/stylesheets/edit.css')
+  body
+    .container
+      h1 Foydalanuvchini Tahrirlash
+      form(method='post', action=`/home/edit/${user.id}`)
+        label(for='username') Username:
+        input(type='text', name='username', value=user.username, required)
+        
+        label(for='email') Email:
+        input(type='email', name='email', value=user.email)
+        
+        label(for='phone_number') Telefon:
+        input(type='text', name='phone_number', value=user.phone_number)
+        
+        button(type='submit') Yangilash
+      a(href='/home') Orqaga

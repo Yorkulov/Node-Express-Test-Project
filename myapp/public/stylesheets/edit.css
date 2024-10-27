@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e); /* Orqa fon */
+    color: #ffffff; 
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 8px; 
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column; 
+  }
+  
+  label {
+    margin-bottom: 5px;
+    color: black;
+  }
+  
+  input[type='text'],
+  input[type='email'] {
+    padding: 10px;
+    margin-bottom: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    font-size: 16px; 
+    color: black;
+  }
+  
+  button[type='submit'] {
+    background-color: #5cb85c; 
+    color: white; 
+    padding: 10px;
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    font-size: 16px; 
+  }
+  
+  button[type='submit']:hover {
+    background-color: #4cae4c;
+  }
+  
+  a {
+    color: #337ab7;
+    text-decoration: none;
+    display: block; 
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  a:hover {
+    text-decoration: underline; 
+  }
+  

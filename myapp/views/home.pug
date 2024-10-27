@@ -1,0 +1,42 @@
+doctype html
+html
+  head
+    title User List
+    link(rel='stylesheet', href='/stylesheets/home.css')
+    script.
+      function deleteUser(userId) {
+        fetch(`/home/delete/${userId}`, {
+          method: 'DELETE',
+        })
+        .then(response => {
+          if (response.ok) {
+            alert('Foydalanuvchi muvaffaqiyatli o‘chirildi.');
+            window.location.reload();
+          } else {
+            alert('Foydalanuvchini o‘chirishda xato.');
+          }
+        })
+        .catch(error => {
+          console.error('Xato:', error);
+          alert('Tarmoq xatosi yuz berdi.');
+        });
+      }
+  body
+    .container
+      h1 Foydalanuvchilar Ro'yxati
+      .user-list
+        each user in users
+          .user-item
+            .user-info
+              p Username: #{user.username}
+              p Email: #{user.email}
+              p Telefon: #{user.phone_number}
+            .user-actions
+              button(type='button', onclick=`deleteUser(${user.id})`) O'chirish
+              a(href=`/home/edit/${user.id}`) Tahrirlash
+
+      .joke 
+        a(href='/joke') Hazilni ko'rish
+        a(href="/auth") Sign Up or Login
+        a(href="/cats") Watch Cats
+

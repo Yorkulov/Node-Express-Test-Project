@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title Joke
+    link(rel='stylesheet', href='/stylesheets/joke.css')
+  body
+    .container
+      h1 Random Joke
+      if joke.setup
+        .joke-p
+            p Joke: #{joke.setup}
+        .punch-p
+            p Punchline: #{joke.delivery}
+      else
+        .joke-p 
+            p Joke: #{joke.joke}
+
+      button(onclick="location.href='/joke'") Get New Joke

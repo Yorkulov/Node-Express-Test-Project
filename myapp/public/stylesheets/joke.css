@@ -1,0 +1,46 @@
+body {
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+.joke-p{
+    display: block;
+    margin-top: 30px;
+    font-size: 25px;
+    color: yellow;
+}
+
+.punch-p{
+    display: block;
+    margin-top: 10px;
+    font-size: 25px;
+    color: yellow;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #302b63;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+button:hover {
+    background-color: #f0f0f0;
+}
